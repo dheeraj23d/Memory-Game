@@ -1,3 +1,11 @@
+$("body").addClass("game-load");
+$("#level-title").text("loading... please wait..");
+setTimeout(function () {
+  $("body").removeClass("game-load");
+  $("#level-title").text("Press Any Key to Start");
+}, 2500);
+
+
 var buttonColours = ["red", "blue", "green", "yellow"];
 
 var gamePattern = [];
